@@ -1,0 +1,4 @@
+interface:
+  display_name: "Knowledge Gap Audit"
+  short_description: "Audit local files and a client website for knowledge-base gaps, with CUS/MAT/ANM items, as a web report"
+  default_prompt: "Use $audit-enterprise-knowledge to audit these local files and the client website for knowledge-base gaps and produce the HTML report."

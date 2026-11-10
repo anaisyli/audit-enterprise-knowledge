@@ -1,0 +1,51 @@
+{
+  "_说明": "七个模块下的小板块，和 compile-enterprise-knowledge 的知识库结构一致。keywords 不分大小写；英文词只在词首对齐（certif 能命中 certificate，但 test 不会命中 latest）；一段原文可以属于几个小板块。how 是缺口表里“怎么补”的默认建议。行业词不要改这里，写进 audit-config.json 的 extra_keywords；要整块替换某个小板块，写进 sections。",
+  "company": [
+    {"name": "公司介绍", "keywords": ["公司简介", "关于我们", "about us", "who we are", "company profile", "我们是", "公司位于", "located in", "headquarter", "总部"], "how": "看官网 About 页或公司简介"},
+    {"name": "发展历程", "keywords": ["成立", "创立", "创建于", "founded", "established", "history", "历程", "里程碑", "milestone", "大事记"], "how": "向客户确认成立年份和大事记"},
+    {"name": "主要业务", "keywords": ["主营", "主要业务", "主要产品", "专业生产", "专注于", "specializ", "we make", "we produce", "we supply", "main products", "our business", "manufacturer of", "supplier of"], "how": "看公司简介或官网首页"},
+    {"name": "公司能力", "keywords": ["产能", "capacity", "员工", "employees", "workers", "staff", "面积", "square meter", "平方米", "㎡", "m²", "生产线", "production line", "monthly output", "annual output", "年产", "月产", "库存", "inventory", "warehouse", "仓库"], "how": "向客户要产能、员工、厂房或仓库面积"},
+    {"name": "公司优势", "keywords": ["优势", "advantage", "why choose", "为什么选择", "strength", "competitive", "one-stop", "一站式", "fast delivery", "low moq", "小单"], "how": "看官网 Why Choose Us，或向客户要卖点"},
+    {"name": "生产设备与工艺", "keywords": ["设备", "机器", "machine", "equipment", "车间", "workshop", "流水线", "生产流程", "production process", "manufacturing process", "加工", "processing", "cutting", "welding", "工序"], "how": "向客户要设备清单、车间照片和工序说明"},
+    {"name": "质量保证", "keywords": ["质量", "品质", "quality", "qc", "检验", "检测", "inspection", "inspect", "质检", "aql", "tolerance", "公差"], "how": "向客户要质检流程和检验项目"},
+    {"name": "资质认证", "keywords": ["认证", "证书", "certif", "iso 9001", "iso9001", "iso 14001", "ce mark", "rohs", "reach", "sgs", "intertek", "tuv", "bureau veritas", "验厂", "audit", "专利", "patent"], "how": "向客户要证书扫描件，写清编号、范围、有效期"},
+    {"name": "销售市场", "keywords": ["出口", "export", "市场", "market", "countries", "国家", "europe", "america", "africa", "middle east", "southeast asia", "欧洲", "北美", "非洲", "中东", "东南亚", "客户遍布"], "how": "向客户确认主要出口国家和客户类型"}
+  ],
+  "product": [
+    {"name": "产品介绍", "keywords": ["series", "系列", "collection", "型号", "model", "type of", "types of", "产品", "product"], "how": "看画册和官网产品页"},
+    {"name": "特性和优势", "keywords": ["特点", "特性", "feature", "advantage", "benefit", "耐用", "durable", "high strength", "高强度", "corrosion resist", "耐腐蚀", "lightweight", "轻便", "环保", "eco-friendly"], "how": "看画册卖点页，或向客户要产品卖点"},
+    {"name": "参数", "keywords": ["规格", "spec", "参数", "parameter", "size", "尺寸", "dimension", "thickness", "厚度", "width", "length", "diameter", "weight", "重量", "material", "材质", "grade", "牌号", "standard", "标准", "moq", "起订"], "how": "向客户要规格书或参数表"},
+    {"name": "应用", "keywords": ["适用", "适合", "用于", "application", "suitable", "ideal for", "used in", "used for", "widely used", "应用"], "how": "看官网产品页的用途说明，或向客户确认目标场景"}
+  ],
+  "solution": [
+    {"name": "应用场景", "keywords": ["场景", "scenario", "industry overview", "适用于", "projects", "工程", "construction", "infrastructure", "retail", "零售", "e-commerce", "电商"], "how": "向客户确认常服务哪类买家和用途"},
+    {"name": "行业解决方案", "keywords": ["解决方案", "solution", "方案", "for distributors", "for contractors", "for brands", "for retailers", "private label", "自有品牌"], "how": "看官网 Solution 页，或向客户要典型合作模式"},
+    {"name": "定制服务类型", "keywords": ["oem", "odm", "定制", "custom", "打样", "sample", "logo", "包装定制", "packaging", "value-added", "增值服务", "流程", "process", "how we work"], "how": "向客户要定制范围、精度、打样周期和起订量"}
+  ],
+  "case": [
+    {"name": "客户案例", "keywords": ["案例", "case stud", "our cases", "合作", "cooperat", "partner", "client"], "how": "案例要客户确认能公开后才写"},
+    {"name": "项目案例", "keywords": ["项目", "project", "工程案例", "program"], "how": "案例要客户确认能公开后才写"},
+    {"name": "用户评价", "keywords": ["评价", "review", "testimonial", "feedback", "好评", "反馈"], "how": "向客户要可公开的买家评价"},
+    {"name": "订单成果", "keywords": ["成果", "销量", "sold", "shipped", "复购", "repeat order", "长期合作", "long-term partner"], "how": "向客户确认可公开的合作数据"}
+  ],
+  "industry": [
+    {"name": "行业介绍", "keywords": ["行业", "industry", "产业", "产业带", "产业集群"], "how": "向客户要行业介绍资料，或另行调研后补"},
+    {"name": "产业链", "keywords": ["产业链", "上游", "下游", "供应链", "supply chain", "raw material", "原材料", "supplier", "供应商", "工厂直供"], "how": "向客户确认从原料到交付哪些环节自己做"},
+    {"name": "专业术语", "keywords": ["术语", "是指", "指的是", "means", "refers to", "what is", "定义", "definition", "又称", "也叫", "also called", " vs ", "difference between", "区别"], "how": "从产品和工艺资料里整理常用词和对比"},
+    {"name": "技术知识", "keywords": ["工艺", "technology", "technical", "技术", "原理", "treatment", "coating", "涂层", "热处理", "astm", "jis", "gb/t", "din"], "how": "看技术资料和画册参数页"},
+    {"name": "市场趋势", "keywords": ["趋势", "trend", "流行", "popular", "forecast", "预测", "新款", "new arrival", "outlook", "行情"], "how": "看新品资料，或向客户确认今年主推"}
+  ],
+  "faq": [
+    {"name": "产品问题", "keywords": ["what is the", "can you supply", "do you have", "which grade", "what size", "产品问题"], "how": "从邮件要点和官网 FAQ 收集"},
+    {"name": "定制与打样", "keywords": ["can you customize", "customized", "定制", "oem", "odm", "sample", "打样"], "how": "从邮件要点和官网 FAQ 收集"},
+    {"name": "生产与交期", "keywords": ["交期", "lead time", "delivery time", "how long", "how quickly", "生产周期", "多久", "moq", "minimum order", "起订"], "how": "向客户确认常规交期"},
+    {"name": "质量与认证", "keywords": ["quality", "certificate", "mtc", "inspection", "质量", "认证", "检测"], "how": "向客户确认质检和认证情况"},
+    {"name": "包装与运输", "keywords": ["包装", "packing", "package", "运输", "shipping", "物流", "logistics", "container", "货柜", "port"], "how": "向客户确认包装和发货方式"}
+  ],
+  "other": [
+    {"name": "服务政策", "keywords": ["售后", "after-sales", "after sales", "保修", "warranty", "退换", "return", "refund", "claim", "索赔", "质量异议", "guarantee"], "how": "向客户确认售后和质量异议处理"},
+    {"name": "包装运输", "keywords": ["包装规格", "packing detail", "export packing", "装箱", "carton", "bundle", "pallet", "托盘", "装柜", "loading"], "how": "向客户要包装规格和装柜数据"},
+    {"name": "安装维护", "keywords": ["安装", "install", "维护", "maintenance", "保养", "使用说明", "user manual", "清洗"], "how": "向客户要安装手册或使用说明"},
+    {"name": "资料下载", "keywords": ["下载", "download", "资料索取", "catalog", "catalogue", "brochure", "画册", "get file"], "how": "整理可公开下载的画册和规格表"}
+  ]
+}
